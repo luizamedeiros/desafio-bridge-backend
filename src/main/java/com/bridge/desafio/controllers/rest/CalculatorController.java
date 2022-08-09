@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class CalculatorController {
 	
 	@GetMapping(value="/calculate", produces = MediaType.APPLICATION_JSON_VALUE)
